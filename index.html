@@ -7,28 +7,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Assistant', sans-serif; scroll-behavior: smooth; }
-        .hero-gradient { background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%); }
-        .soft-purple { background-color: #f5f7ff; }
+        body { font-family: 'Assistant', sans-serif; scroll-behavior: smooth; background-color: #f8fafc; }
+        .bg-azure { background-color: #bde2f2; }
+        .text-azure-dark { color: #5a8ca0; }
+        .hero-gradient { background: linear-gradient(135deg, #bde2f2 0%, #e0f2fe 100%); }
+        .card-shadow { box-shadow: 0 10px 25px -5px rgba(189, 226, 242, 0.3); }
     </style>
 </head>
-<body class="bg-white text-slate-800">
+<body class="text-slate-700">
 
-    <section class="min-h-screen flex flex-col justify-center items-center hero-gradient text-white text-center p-6 shadow-inner">
-        <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-sm">אסף אליהו</h1>
-        <h2 class="text-2xl md:text-3xl font-light mb-8 opacity-95">המרכז ללימודי מתמטיקה ופיזיקה</h2>
-        <p class="text-xl italic border-t border-b border-indigo-300 py-2 inline-block">המקום בו פוטנציאל הופך להצלחה</p>
-        <div class="mt-20 animate-bounce text-2xl opacity-70">↓</div>
+    <section class="min-h-[80vh] flex flex-col justify-center items-center hero-gradient text-slate-800 text-center p-6">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">אסף אליהו</h1>
+        <h2 class="text-2xl md:text-3xl font-light mb-8 text-slate-600">המרכז ללימודי מתמטיקה ופיזיקה</h2>
+        <div class="h-1 w-20 bg-white mb-8 rounded-full"></div>
+        <p class="text-xl md:text-2xl font-light tracking-wide">המקום בו פוטנציאל הופך להצלחה</p>
+        <div class="mt-16 animate-bounce opacity-40 text-2xl">↓</div>
     </section>
 
     <section class="py-24 px-6 max-w-5xl mx-auto">
-        <div class="flex flex-col md:flex-row items-center gap-12 text-center md:text-right">
-            <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
-                <img src="DSC04619.jpg" alt="אסף אליהו" class="rounded-full shadow-2xl border-4 border-indigo-50 object-cover w-full h-full" style="object-position: center 10%;">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="w-56 h-56 md:w-72 md:h-72 flex-shrink-0 relative">
+                <div class="absolute inset-0 bg-azure rounded-full -rotate-6 translate-x-2 translate-y-2 opacity-50"></div>
+                <img src="DSC04619.jpg" alt="אסף אליהו" class="relative rounded-full shadow-lg object-cover w-full h-full border-4 border-white" style="object-position: center 10%;">
             </div>
-            <div>
-                <h2 class="text-3xl font-bold mb-8 text-indigo-900">קצת עליי</h2>
-                <p class="text-xl leading-relaxed text-slate-700">
+            <div class="text-center md:text-right">
+                <h2 class="text-3xl font-bold mb-8 text-slate-800 border-r-4 border-azure pr-4">קצת עליי</h2>
+                <p class="text-xl leading-relaxed font-light text-slate-600">
                     אסף אליהו, בן 31. לאחר לימודי התואר הראשון בפיזיקה באוניברסיטת בן גוריון, התחלתי ללמד פיזיקה ומתמטיקה בתיכונים ולהגיש לבגרויות.
                     לימדתי 3 שנים בבאר שבע ובאשדוד, ואחריהן עשיתי סיבוב קצרצר בהייטק שהדגיש לי כמה הלב שלי נמצא בחינוך והוראה.
                     חזרתי להוראה, והפעם בשילוב בין הוראה ציבורית לקבוצות מיקוד אחר הצהריים במתמטיקה ובפיזיקה.
@@ -37,59 +41,60 @@
         </div>
     </section>
 
-    <section class="py-20 soft-purple px-6 border-y border-indigo-50">
+    <section class="py-20 bg-white px-6">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="p-8 bg-white rounded-2xl shadow-sm text-center border-b-4 border-indigo-400 transform transition hover:translate-y-[-5px]">
+            <div class="p-8 bg-slate-50 rounded-3xl text-center transition hover:bg-[#bde2f2] hover:bg-opacity-20">
                 <div class="text-3xl mb-4">💎</div>
-                <h3 class="font-bold text-xl mb-2 text-indigo-900">יחס פרטי</h3>
-                <p class="text-slate-600 text-sm">ליווי אישי ממוקד בקשיים וביעדים שלכם.</p>
+                <h3 class="font-bold text-xl mb-2">יחס פרטי</h3>
+                <p class="text-slate-500 text-sm">ליווי אישי ממוקד בקשיים וביעדים שלכם.</p>
             </div>
-            <div class="p-8 bg-white rounded-2xl shadow-sm text-center border-b-4 border-indigo-400 transform transition hover:translate-y-[-5px]">
+            <div class="p-8 bg-slate-50 rounded-3xl text-center transition hover:bg-[#bde2f2] hover:bg-opacity-20">
                 <div class="text-3xl mb-4">🤝</div>
-                <h3 class="font-bold text-xl mb-2 text-indigo-900">אקלים שיתופי</h3>
-                <p class="text-slate-600 text-sm">למידה בקבוצות קטנות המעודדות הישגיות.</p>
+                <h3 class="font-bold text-xl mb-2">אקלים שיתופי</h3>
+                <p class="text-slate-500 text-sm">למידה בקבוצות קטנות המעודדות הישגיות.</p>
             </div>
-            <div class="p-8 bg-white rounded-2xl shadow-sm text-center border-b-4 border-indigo-400 transform transition hover:translate-y-[-5px]">
+            <div class="p-8 bg-slate-50 rounded-3xl text-center transition hover:bg-[#bde2f2] hover:bg-opacity-20">
                 <div class="text-3xl mb-4">🎯</div>
-                <h3 class="font-bold text-xl mb-2 text-indigo-900">שיטה מותאמת</h3>
-                <p class="text-slate-600 text-sm">תוכנית עבודה שמתחשבת בחוזקות שלכם.</p>
+                <h3 class="font-bold text-xl mb-2">שיטה מותאמת</h3>
+                <p class="text-slate-500 text-sm">תוכנית עבודה שמתחשבת בחוזקות שלכם.</p>
             </div>
-            <div class="p-8 bg-white rounded-2xl shadow-sm text-center border-b-4 border-indigo-400 transform transition hover:translate-y-[-5px]">
+            <div class="p-8 bg-slate-50 rounded-3xl text-center transition hover:bg-[#bde2f2] hover:bg-opacity-20">
                 <div class="text-3xl mb-4">📚</div>
-                <h3 class="font-bold text-xl mb-2 text-indigo-900">חומרי לימוד</h3>
-                <p class="text-slate-600 text-sm">גישה לסיכומים, תרגולים ומבחני עבר.</p>
+                <h3 class="font-bold text-xl mb-2">חומרי לימוד</h3>
+                <p class="text-slate-500 text-sm">גישה לסיכומים, תרגולים ומבחני עבר.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-white px-6">
+    <section class="py-24 px-6">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16 text-indigo-900">מסלולים והשקעה</h2>
+            <h2 class="text-4xl font-bold text-center mb-16 text-slate-800">מסלולים והשקעה</h2>
             <div class="grid md:grid-cols-2 gap-10">
                 
-                <div class="bg-indigo-50/50 p-12 rounded-3xl shadow-sm border border-indigo-100 transform transition hover:shadow-md">
-                    <h3 class="text-3xl font-bold mb-6 text-indigo-700">מנוי חודשי</h3>
-                    <ul class="space-y-4 mb-10 text-lg text-slate-700">
-                        <li class="flex items-center gap-2"><span class="text-indigo-400">•</span> <span>מפגש שבועי קבוע (שעה וחצי)</span></li>
-                        <li class="flex items-center gap-2"><span class="text-indigo-400">•</span> <span>קבוצות קטנות (4-6 תלמידים)</span></li>
-                        <li class="flex items-center gap-2"><span class="text-indigo-400">•</span> <span>ליווי אישי וזמינות בוואטסאפ לכל שאלה</span></li>
+                <div class="bg-white p-12 rounded-[2rem] card-shadow border border-[#bde2f2] relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-azure opacity-20 -mr-12 -mt-12 rounded-full"></div>
+                    <h3 class="text-3xl font-bold mb-6 text-slate-800">מנוי חודשי</h3>
+                    <ul class="space-y-4 mb-10 text-lg text-slate-600">
+                        <li class="flex items-center gap-2"><span class="text-azure-dark">•</span> <span>מפגש שבועי קבוע (שעה וחצי)</span></li>
+                        <li class="flex items-center gap-2"><span class="text-azure-dark">•</span> <span>קבוצות קטנות (4-6 תלמידים)</span></li>
+                        <li class="flex items-center gap-2"><span class="text-azure-dark">•</span> <span>ליווי אישי וזמינות בוואטסאפ לכל שאלה</span></li>
                     </ul>
-                    <div class="border-t border-indigo-200 pt-8">
-                        <div class="text-4xl font-bold text-slate-800">500 ₪ <span class="text-xl font-normal text-slate-500">/ למקצוע</span></div>
-                        <p class="text-xl mt-3 text-indigo-600 font-semibold italic">950 ₪ למנוי כפול</p>
+                    <div class="border-t border-slate-100 pt-8">
+                        <div class="text-4xl font-bold text-slate-800">500 ₪ <span class="text-xl font-normal text-slate-400">/ למקצוע</span></div>
+                        <p class="text-xl mt-3 text-azure-dark font-semibold">950 ₪ למנוי כפול</p>
                     </div>
                 </div>
 
-                <div class="bg-white p-12 rounded-3xl shadow-sm border border-slate-200 transform transition hover:shadow-md">
+                <div class="bg-white p-12 rounded-[2rem] border border-slate-200 shadow-sm">
                     <h3 class="text-3xl font-bold mb-6 text-slate-800">כרטיסיית מפגשים</h3>
                     <ul class="space-y-4 mb-10 text-lg text-slate-600">
-                        <li class="flex items-center gap-2"><span class="text-slate-400">•</span> <span>כרטיסייה גמישה ללא התחייבות חודשית</span></li>
-                        <li class="flex items-center gap-2"><span class="text-slate-400">•</span> <span>תיאום מפגשים על בסיס מקום פנוי</span></li>
-                        <li class="flex items-center gap-2"><span class="text-slate-400">•</span> <span>אידיאלי לתגבור לפני מבחנים או בגרויות</span></li>
+                        <li class="flex items-center gap-2"><span class="text-slate-300">•</span> <span>כרטיסייה גמישה ללא התחייבות חודשית</span></li>
+                        <li class="flex items-center gap-2"><span class="text-slate-300">•</span> <span>תיאום מפגשים על בסיס מקום פנוי</span></li>
+                        <li class="flex items-center gap-2"><span class="text-slate-300">•</span> <span>אידיאלי לתגבור לפני מבחנים</span></li>
                     </ul>
-                    <div class="border-t border-slate-200 pt-8">
-                        <div class="text-4xl font-bold text-slate-800">600 ₪ <span class="text-xl font-normal text-slate-500">/ ל-4 מפגשים</span></div>
-                        <p class="text-lg mt-3 text-indigo-500 font-medium italic text-opacity-80">1,100 ₪ לכרטיסיית 8 מפגשים</p>
+                    <div class="border-t border-slate-100 pt-8">
+                        <div class="text-4xl font-bold text-slate-800">600 ₪ <span class="text-xl font-normal text-slate-400">/ ל-4 מפגשים</span></div>
+                        <p class="text-lg mt-3 text-slate-500 font-medium">1,100 ₪ לכרטיסיית 8 מפגשים</p>
                     </div>
                 </div>
 
@@ -97,15 +102,15 @@
         </div>
     </section>
 
-    <section class="py-24 hero-gradient text-white text-center px-6 shadow-inner">
+    <section class="py-24 bg-azure text-slate-800 text-center px-6">
         <h2 class="text-4xl font-bold mb-8">מתחילים להצליח היום!</h2>
         <div class="flex flex-col md:flex-row justify-center gap-6">
-            <a href="https://wa.me/972548017134" class="bg-green-500 hover:bg-green-600 px-12 py-5 rounded-full font-bold text-xl transition shadow-lg hover:scale-105">וואטסאפ</a>
-            <a href="mailto:eliyahuasaf@gmail.com" class="bg-white/10 hover:bg-white/20 border-2 border-white px-12 py-5 rounded-full font-bold text-xl transition shadow-lg hover:scale-105">שלחו מייל</a>
+            <a href="https://wa.me/972548017134" class="bg-slate-800 text-white px-12 py-5 rounded-full font-bold text-xl transition shadow-lg hover:bg-slate-700">דברו איתי בוואטסאפ</a>
+            <a href="mailto:eliyahuasaf@gmail.com" class="bg-white text-slate-800 px-12 py-5 rounded-full font-bold text-xl transition shadow-md hover:bg-slate-50 border border-slate-100">שלחו מייל</a>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-indigo-300 text-sm bg-slate-900">
+    <footer class="py-10 text-center text-slate-400 text-sm">
         © 2026 אסף אליהו - המרכז ללימודי מתמטיקה ופיזיקה
     </footer>
 
